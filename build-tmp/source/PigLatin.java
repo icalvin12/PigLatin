@@ -30,8 +30,6 @@ public void draw()
 }
 public int findFirstVowel(String sWord)
 {
-	if(sWord.length()>0)
-	{
 		for(int i=0; i<sWord.length();i++)
 		{
 		if((sWord.substring(0+i,1+i).equals("a")) || (sWord.substring(0+i,1+i).equals("e")) || (sWord.substring(0+i,1+i).equals("i")) || (sWord.substring(0+i,1+i).equals("o")) || (sWord.substring(0+i,1+i).equals("u")))
@@ -39,7 +37,6 @@ public int findFirstVowel(String sWord)
 			return i;
 		}
 		}
-	}
 	return -1;
 }
 
